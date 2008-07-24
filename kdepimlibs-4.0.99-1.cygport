@@ -1,0 +1,10 @@
+inherit kde4
+
+PKG_NAMES="${PN} ${PN}-kioslaves
+           libgpgme++2 libgpgme++-devel libqgpgme1 libqgpgme-devel"
+
+for l in akonadi-kde kabc kblog kcal kimap kldap kmime kpimidentities \
+         kpimutils kresources ktnef kxmlrpcclient mailtransport syndication
+do
+	PKG_NAMES+=" lib${l}4 lib${l}-devel"
+done
