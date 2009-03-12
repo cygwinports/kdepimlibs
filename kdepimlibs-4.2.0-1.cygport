@@ -1,0 +1,19 @@
+inherit kde4
+
+PKG_NAMES="${PN} ${PN}-kioslaves
+           libgpgme++2 libgpgme++-devel libqgpgme1 libqgpgme-devel"
+
+# kdepimlibs_kioslaves_CONTENTS=
+libgpgme__2_CONTENTS="usr/bin/cyggpgme++*-2.dll"
+libgpgme___devel_CONTENTS="usr/include/kde4/gpgme++/ usr/lib/gpgmepp/ usr/lib/libgpgme++*"
+libqgpgme1_CONTENTS="usr/bin/cygqgpgme-1.dll"
+libqgpgme_devel_CONTENTS="usr/include/kde4/qgpgme/ usr/lib/libqgpgme.*"
+
+for l in akonadi-kde kabc kblog kcal kimap kldap kmime kpimidentities \
+         kpimutils kresources ktnef kxmlrpcclient mailtransport syndication
+do
+	PKG_NAMES+=" lib${l}4 lib${l}-devel"
+	declare lib${l/-/_}4_CONTENTS="usr/bin/cyg${l%-kde}*-4.dll"
+	declare lib${l/-/_}_devel_CONTENTS="usr/include/kde4/${l%-kde}
+	                                    usr/lib/lib${l%-kde}*"
+done
