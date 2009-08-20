@@ -1,0 +1,6 @@
+category: KDE
+requires: kde4-cmake-pimlibs libakonadi-kde4 libakonadiprotocolinternals-devel libkdecore5-devel libkmime4-devel libQtCore4-devel libQtDBus4-devel libQtGui4-devel libQtNetwork4-devel libQtSql4-devel
+external-source: kdepimlibs
+sdesc: "KDE Akonadi client library (development)"
+ldesc: "This module includes libraries that are central to the development and
+execution of a KDE-PIM application."

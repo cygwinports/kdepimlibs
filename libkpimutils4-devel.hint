@@ -1,0 +1,6 @@
+category: KDE
+requires: kde4-cmake-pimlibs libkpimutils4 libkdecore5-devel libkmime4-devel libQtCore4-devel
+external-source: kdepimlibs
+sdesc: "KDE PIM utils library (development)"
+ldesc: "This module includes libraries that are central to the development and
+execution of a KDE-PIM application."

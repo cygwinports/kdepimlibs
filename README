@@ -1,0 +1,110 @@
+kdepimlibs
+------------------------------------------
+This module includes libraries that are central to the development and 
+execution of a KDE-PIM application:
+* akonadi: client access library for using the Akonadi PIM data server.
+* kabc: addressbook library
+* kblog: C++ API for weblogging access
+* kcal: C++ API for the iCalendar and vCalendar formats
+* kimap: C++ API for IMAP support
+* kldap: C++ API for LDAP access
+* kmime: C++ API for MIME handling
+* kpimidentities: C++ API for shared identities for mail applications
+* kpimutils: A library for general purpose PIM utilities
+* ktnef: C++ API for the handling of TNEF data
+* kxmlrpclient: An XML-RPC client library
+* mailtransport: C++ API and support code for managing mail transport
+* qgpgme: A C++ wrapper for gpgme
+* syndication: An RSS/Atom feed parser library
+
+Runtime requirements:
+  cygwin-1.7.0-52
+  libgcc1-4.3.2-2
+  libgpg-error-1.6-1
+  libgpgme11-1.1.8-1
+  libkdecore5-4.2.4-1
+  libical0-0.43-10
+  libopenldap2_3_0-2.3.43-1
+  libQtCore4-4.5.2-1
+  libQtDBus4-4.5.2-1
+  libQtGui4-4.5.2-1
+  libQtNetwork4-4.5.2-1
+  libQtSql4-4.5.2-1
+  libQtXml4-4.5.2-1
+  libsasl2-2.1.19-3
+  libstdc++6-4.3.2-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  automoc4-0.9.88-10
+  binutils-2.19.51-1
+  cmake-2.6.4-10
+  cygport-0.9.8-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
+  pkg-config-0.23b-10
+
+Canonical website:
+  http://www.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/stable/4.2.4/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdepimlibs-4.2.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdepimlibs-4.2.4-X.cygport all
+
+This will create:
+  /usr/src/kde4-cmake-pimlibs-4.2.4-X.tar.bz2
+  /usr/src/kde4-kio-pim-4.2.4-X.tar.bz2
+  /usr/src/kdepimlibs-4.2.4-X-src.tar.bz2
+  /usr/src/kdepimlibs-4.2.4-X.tar.bz2
+  /usr/src/libakonadi-kde4-4.2.4-X.tar.bz2
+  /usr/src/libakonadi-kde4-devel-4.2.4-X.tar.bz2
+  /usr/src/libgpgme++2-4.2.4-X.tar.bz2
+  /usr/src/libgpgme++2-devel-4.2.4-X.tar.bz2
+  /usr/src/libkabc4-4.2.4-X.tar.bz2
+  /usr/src/libkabc4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkblog4-4.2.4-X.tar.bz2
+  /usr/src/libkblog4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkcal4-4.2.4-X.tar.bz2
+  /usr/src/libkcal4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkimap4-4.2.4-X.tar.bz2
+  /usr/src/libkimap4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkldap4-4.2.4-X.tar.bz2
+  /usr/src/libkldap4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkmime4-4.2.4-X.tar.bz2
+  /usr/src/libkmime4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkpimidentities4-4.2.4-X.tar.bz2
+  /usr/src/libkpimidentities4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkpimutils4-4.2.4-X.tar.bz2
+  /usr/src/libkpimutils4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkresources4-4.2.4-X.tar.bz2
+  /usr/src/libkresources4-devel-4.2.4-X.tar.bz2
+  /usr/src/libktnef4-4.2.4-X.tar.bz2
+  /usr/src/libktnef4-devel-4.2.4-X.tar.bz2
+  /usr/src/libkxmlrpcclient4-4.2.4-X.tar.bz2
+  /usr/src/libkxmlrpcclient4-devel-4.2.4-X.tar.bz2
+  /usr/src/libmailtransport4-4.2.4-X.tar.bz2
+  /usr/src/libmailtransport4-devel-4.2.4-X.tar.bz2
+  /usr/src/libqgpgme1-4.2.4-X.tar.bz2
+  /usr/src/libqgpgme1-devel-4.2.4-X.tar.bz2
+  /usr/src/libsyndication4-4.2.4-X.tar.bz2
+  /usr/src/libsyndication4-devel-4.2.4-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 4.2.4-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

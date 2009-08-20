@@ -1,0 +1,6 @@
+category: KDE
+requires: libgcc1 libgpg-error libgpgme11 libstdc++6
+external-source: kdepimlibs
+sdesc: "GnuPG C++ library (runtime)"
+ldesc: "This module includes libraries that are central to the development and
+execution of a KDE-PIM application."

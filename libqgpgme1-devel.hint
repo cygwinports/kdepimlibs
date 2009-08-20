@@ -1,0 +1,6 @@
+category: KDE
+requires: kde4-cmake-pimlibs libqgpgme1 libgpgme++2-devel libQtCore4-devel
+external-source: kdepimlibs
+sdesc: "Qt4 GPGME library (development)"
+ldesc: "This module includes libraries that are central to the development and
+execution of a KDE-PIM application."

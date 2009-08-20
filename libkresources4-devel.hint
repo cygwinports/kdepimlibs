@@ -1,0 +1,6 @@
+category: KDE
+requires: kde4-cmake-pimlibs libkresources4 libkdecore5-devel libQtCore4-devel libQtDBus4-devel libQtGui4-devel
+external-source: kdepimlibs
+sdesc: "KDE KResources library (development)"
+ldesc: "This module includes libraries that are central to the development and
+execution of a KDE-PIM application."

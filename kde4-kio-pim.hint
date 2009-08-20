@@ -1,0 +1,6 @@
+category: KDE
+requires: libgcc1 libkdecore5 libkimap4 libkldap4 libkmime4 libQtCore4 libQtNetwork4 libsasl2 libstdc++6
+external-source: kdepimlibs
+sdesc: "KDE4 PIM KIO plugins"
+ldesc: "This module includes libraries that are central to the development and
+execution of a KDE-PIM application."

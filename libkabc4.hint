@@ -1,0 +1,6 @@
+category: KDE
+requires: libgcc1 libkdecore5 libkldap4 libkresources4 libQtCore4 libQtDBus4 libQtGui4 libstdc++6
+external-source: kdepimlibs
+sdesc: "KDE addressbook library (runtime)"
+ldesc: "This module includes libraries that are central to the development and
+execution of a KDE-PIM application."
