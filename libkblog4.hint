@@ -1,6 +1,0 @@
-category: KDE
-requires: libgcc1 libkcal4 libkdecore5 libkxmlrpcclient4 libQtCore4 libQtGui4 libstdc++6 libsyndication4
-external-source: kdepimlibs
-sdesc: "KDE blogging library (runtime)"
-ldesc: "This module includes libraries that are central to the development and
-execution of a KDE-PIM application."

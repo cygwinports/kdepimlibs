@@ -1,0 +1,6 @@
+inherit kde4
+
+PKG_NAMES="${PN} libkpim4 libkpim4-devel"
+libkpim4_CONTENTS="--exclude=cmake etc/ usr/bin/ usr/lib/kde4/*.dll usr/share/"
+libkpim4_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/gpgmepp/
+                         usr/lib/kde4/lib/ usr/share/kde4/apps/cmake/"

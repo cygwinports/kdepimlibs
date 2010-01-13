@@ -1,6 +1,0 @@
-category: KDE
-requires: libgcc1 libkdecore5 libQtCore4 libstdc++6
-external-source: kdepimlibs
-sdesc: "KDE IMAP library (runtime)"
-ldesc: "This module includes libraries that are central to the development and
-execution of a KDE-PIM application."

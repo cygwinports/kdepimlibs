@@ -1,6 +1,0 @@
-category: KDE
-requires: libakonadiprotocolinternals1 libgcc1 libkdecore5 libkmime4 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtSql4 libstdc++6
-external-source: kdepimlibs
-sdesc: "KDE Akonadi client library (runtime)"
-ldesc: "This module includes libraries that are central to the development and
-execution of a KDE-PIM application."

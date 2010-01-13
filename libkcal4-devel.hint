@@ -1,6 +1,0 @@
-category: KDE
-requires: kde4-cmake-pimlibs libkcal4 libical-devel libkabc4-devel libkdecore5-devel libkpimutils4-devel libkresources4-devel libQtCore4-devel libQtGui4-devel libQtXml4-devel
-external-source: kdepimlibs
-sdesc: "KDE calendar library (development)"
-ldesc: "This module includes libraries that are central to the development and
-execution of a KDE-PIM application."

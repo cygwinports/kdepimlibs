@@ -1,6 +1,0 @@
-category: KDE
-requires: kde4-cmake-pimlibs libkxmlrpcclient4 libkdecore5-devel libQtCore4-devel libQtXml4-devel
-external-source: kdepimlibs
-sdesc: "KDE kxmlrpcclient library (development)"
-ldesc: "This module includes libraries that are central to the development and
-execution of a KDE-PIM application."

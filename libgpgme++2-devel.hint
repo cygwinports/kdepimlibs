@@ -1,6 +1,0 @@
-category: KDE
-requires: kde4-cmake-pimlibs libgpgme++2 libgpg-error libgpgme-devel
-external-source: kdepimlibs
-sdesc: "GnuPG C++ library (development)"
-ldesc: "This module includes libraries that are central to the development and
-execution of a KDE-PIM application."

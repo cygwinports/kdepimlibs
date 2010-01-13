@@ -1,6 +1,0 @@
-category: KDE
-requires: libkdecore5-devel
-external-source: kdepimlibs
-sdesc: "KDE4 PIMLibs CMake macros"
-ldesc: "This module includes libraries that are central to the development and
-execution of a KDE-PIM application."

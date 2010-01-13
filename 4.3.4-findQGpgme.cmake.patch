@@ -1,0 +1,24 @@
+--- origsrc/kdepimlibs-4.3.4/cmake/modules/FindQGpgme.cmake	2009-05-06 05:13:19.000000000 -0500
++++ src/kdepimlibs-4.3.4/cmake/modules/FindQGpgme.cmake	2010-01-12 21:34:51.891339600 -0600
+@@ -17,18 +17,18 @@ if(GPGME_FOUND)
+                    HINTS ${GPGME_LIBRARY_DIR})
+    else ( WIN32 )
+       find_library(_QGPGME_EXTRA_LIBRARY gpgme++-pthread
+-                   HINTS ${GPGME_LIBRARY_DIR})
++                   HINTS ${KDE4_LIB_DIR})
+    endif ( WIN32 )
+ 
+    find_library(QGPGME_LIBRARY qgpgme
+-                HINTS ${GPGME_LIBRARY_DIR})
++                HINTS ${KDE4_LIB_DIR})
+ 
+    if (QGPGME_LIBRARY)
+       # get the libdirectory and then go one up
+       get_filename_component(_QGPGME_PREFIX "${QGPGME_LIBRARY}" PATH)
+       get_filename_component(_QGPGME_PREFIX "${_QGPGME_PREFIX}" PATH)
+       find_path(QGPGME_INCLUDE_DIR qgpgme/qgpgme_export.h 
+-                HINTS "${_QGPGME_PREFIX}/include" )
++                HINTS ${KDE4_INCLUDE_DIR})
+    endif (QGPGME_LIBRARY)
+ 
+    if ( WIN32 )
