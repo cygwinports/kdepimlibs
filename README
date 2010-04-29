@@ -4,29 +4,30 @@ This module includes libraries that are central to the development and
 execution of a KDE-PIM application.
 
 Runtime requirements:
-  cygwin-1.7.1-1
-  libakonadiprotocolinternals1-1.2.1-1
+  cygwin-1.7.5-1
+  libakonadiprotocolinternals1-1.3.1-1
   libgcc1-4.3.4-3
-  libgpg-error-1.6-1
+  libgpg-error0-1.7-1
   libgpgme11-1.1.8-2
   libical0-0.44-1
-  libkdecore5-4.3.5-1
+  libkdecore5-4.4.2-1
   libopenldap2_3_0-2.3.43-1
-  libQtCore4-4.5.3-2
-  libQtDBus4-4.5.3-2
-  libQtGui4-4.5.3-2
-  libQtNetwork4-4.5.3-2
-  libQtSql4-4.5.3-2
-  libQtXml4-4.5.3-2
+  libphonon4-4.4.0-1
+  libQtCore4-4.6.2-1
+  libQtDBus4-4.6.2-1
+  libQtGui4-4.6.2-1
+  libQtNetwork4-4.6.2-1
+  libQtSql4-4.6.2-1
+  libQtXml4-4.6.2-1
   libsasl2-2.1.19-3
   libstdc++6-4.3.4-3
 
 Build requirements:
 (besides corresponding -devel packages)
   automoc4-0.9.88-10
-  binutils-2.19.51-1
+  binutils-2.20.51-1
   cmake-2.8.0-11
-  cygport-0.9.80-1
+  cygport-0.9.83-1
   gcc4-core-4.3.4-3
   gcc4-g++-4.3.4-3
   libboost-devel-1.40.0-1
@@ -37,25 +38,28 @@ Canonical website:
   http://www.kde.org/
 
 Canonical download:
-  ftp://ftp.kde.org/pub/kde/stable/4.3.5/
+  ftp://ftp.kde.org/pub/kde/stable/4.4.2/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kdepimlibs-4.3.5-X-src.tar.bz2
+  unpack kdepimlibs-4.4.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kdepimlibs-4.3.5-X.cygport all
+  cygport ./kdepimlibs-4.4.2-X.cygport all
 
 This will create:
-  /usr/src/kdepimlibs-4.3.5-X-src.tar.bz2
-  /usr/src/libkpim4-devel-4.3.5-X.tar.bz2
-  /usr/src/libkpim4-4.3.5-X.tar.bz2
+  /usr/src/kdepimlibs-4.4.2-X-src.tar.bz2
+  /usr/src/libkpim4-devel-4.4.2-X.tar.bz2
+  /usr/src/libkpim4-4.4.2-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 4.4.2-1 -----
+Version bump for KDE 4.4.
 
 ----- version 4.3.5-1 -----
 Version bump.
