@@ -10,7 +10,7 @@ Runtime requirements:
   libgpg-error0-1.7-1
   libgpgme11-1.1.8-2
   libical0-0.44-1
-  libkdecore5-4.4.2-1
+  libkdecore5-4.4.3-1
   libopenldap2_3_0-2.3.43-1
   libphonon4-4.4.0-1
   libQtCore4-4.6.2-1
@@ -38,27 +38,27 @@ Canonical website:
   http://www.kde.org/
 
 Canonical download:
-  ftp://ftp.kde.org/pub/kde/stable/4.4.2/
+  ftp://ftp.kde.org/pub/kde/stable/4.4.3/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kdepimlibs-4.4.2-X-src.tar.bz2
+  unpack kdepimlibs-4.4.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kdepimlibs-4.4.2-X.cygport all
+  cygport ./kdepimlibs-4.4.3-X.cygport all
 
 This will create:
-  /usr/src/kdepimlibs-4.4.2-X-src.tar.bz2
-  /usr/src/libkpim4-devel-4.4.2-X.tar.bz2
-  /usr/src/libkpim4-4.4.2-X.tar.bz2
+  /usr/src/kdepimlibs-4.4.3-X-src.tar.bz2
+  /usr/src/libkpim4-devel-4.4.3-X.tar.bz2
+  /usr/src/libkpim4-4.4.3-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
 
------ version 4.4.2-1 -----
+----- version 4.4.3-1 -----
 Version bump for KDE 4.4.
 
 ----- version 4.3.5-1 -----
