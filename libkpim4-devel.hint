@@ -1,5 +1,6 @@
 category: KDE
 requires: libakonadiprotocolinternals-devel libboost-devel libkdecore5-devel libQtCore4-devel libQtDBus4-devel libQtGui4-devel
-sdesc: "KDE PIM libraries (runtime)"
+external-source: kdepimlibs
+sdesc: "KDE PIM libraries (development)"
 ldesc: "This module includes libraries that are central to the development and
 execution of a KDE-PIM application."

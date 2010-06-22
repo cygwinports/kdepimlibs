@@ -1,5 +1,6 @@
 category: KDE
 requires: libakonadiprotocolinternals1 libgcc1 libgpg-error0 libgpgme11 libical0 libkdecore5 libopenldap2_3_0 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtSql4 libQtXml4 libsasl2 libstdc++6 shared-mime-info
+external-source: kdepimlibs
 sdesc: "KDE PIM libraries (runtime)"
 ldesc: "This module includes libraries that are central to the development and
 execution of a KDE-PIM application."
