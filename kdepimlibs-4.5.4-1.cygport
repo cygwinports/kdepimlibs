@@ -1,0 +1,8 @@
+inherit kde4
+
+PATCH_URI="4.3.4-findQGpgme.cmake.patch"
+
+PKG_NAMES="libkpim4 libkpim-devel"
+libkpim4_CONTENTS="--exclude=cmake etc/ usr/bin/ usr/lib/kde4/*.dll usr/share/"
+libkpim_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/gpgmepp/
+                        usr/lib/lib* usr/share/kde4/apps/cmake/"
