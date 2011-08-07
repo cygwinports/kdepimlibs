@@ -1,0 +1,6 @@
+category: KDE
+requires:
+external-source: kdepimlibs
+sdesc: "KDE PIM libraries (runtime data)"
+ldesc: "This module includes libraries that are central to the development and
+execution of a KDE-PIM application."
