@@ -1,4 +1,0 @@
-category: KDE
-sdesc: "KDE PIM libraries (sources)"
-ldesc: "This module includes libraries that are central to the development and
-execution of a KDE-PIM application."
