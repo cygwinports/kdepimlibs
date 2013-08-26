@@ -1,9 +1,9 @@
 inherit kde4
 
 NAME="kdepimlibs"
-VERSION=4.9.5
+VERSION=4.10.5
 RELEASE=1
-CATEGORY="KDE"
+CATEGORY="Libs"
 SUMMARY="KDE PIM libraries"
 DESCRIPTION="This module includes libraries that are central to the development
 and execution of a KDE-PIM application."
