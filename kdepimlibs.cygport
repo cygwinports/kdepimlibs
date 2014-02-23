@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kdepimlibs"
-VERSION=4.10.5
+VERSION=4.11.5
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE PIM libraries"
@@ -11,10 +11,10 @@ and execution of a KDE-PIM application."
 PKG_NAMES="libkpim4 libkpim-common libkpim-devel"
 libkpim4_SUMMARY="${SUMMARY} (runtime)"
 libkpim4_REQUIRES="libkpim-common"
-libkpim4_CONTENTS="usr/bin/ usr/lib/kde4/"
+libkpim4_CONTENTS="--exclude=designer usr/bin/ usr/lib/kde4/"
 libkpim_common_SUMMARY="${SUMMARY} (runtime data)"
 libkpim_common_CONTENTS="--exclude=cmake etc/ usr/share/"
 libkpim_devel_SUMMARY="${SUMMARY} (development)"
 libkpim_devel_REQUIRES="libakonadiprotocolinternals-devel libboost-devel libkdecore5-devel libQtCore4-devel libQtDBus4-devel libQtGui4-devel"
-libkpim_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/gpgmepp/
+libkpim_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/gpgmepp/ usr/lib/kde4/plugins/designer/
                         usr/lib/lib* usr/share/kde4/apps/cmake/"
