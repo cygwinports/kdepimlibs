@@ -15,6 +15,6 @@ libkpim4_CONTENTS="--exclude=designer usr/bin/ usr/lib/kde4/"
 libkpim_common_SUMMARY="${SUMMARY} (runtime data)"
 libkpim_common_CONTENTS="--exclude=cmake etc/ usr/share/"
 libkpim_devel_SUMMARY="${SUMMARY} (development)"
-libkpim_devel_REQUIRES="libakonadiprotocolinternals-devel libboost-devel libkdecore5-devel libQtCore4-devel libQtDBus4-devel libQtGui4-devel"
+libkpim_devel_REQUIRES="libakonadiprotocolinternals-devel libboost-devel libkdecore-devel libQtCore4-devel libQtDBus4-devel libQtGui4-devel"
 libkpim_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/gpgmepp/ usr/lib/kde4/plugins/designer/
                         usr/lib/lib* usr/share/kde4/apps/cmake/"
