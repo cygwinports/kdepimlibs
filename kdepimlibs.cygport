@@ -2,20 +2,79 @@ inherit kde4
 
 NAME="kdepimlibs"
 VERSION=4.14.10
-RELEASE=2
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="KDE PIM libraries"
 DESCRIPTION="This module includes libraries that are central to the development
 and execution of a KDE-PIM application."
 SRC_URI="mirror://kde/stable/applications/15.04.3/src/${NAME}-${VERSION}.tar.xz"
+PATCH_URI="
+	fedora/0001-Output-warnings-when-ItemSync-fails-to-delete-an-ite.patch
+	fedora/0002-missing-camelcase-headers-for-Akonadi-KABC-and-Akona.patch
+	fedora/0003-Optimization-avoid-double-lookup-in-QHash.patch
+	fedora/0004-Fix-build-broken-by-592ae642b6.patch
+	fedora/0005-FindLibical.cmake-using-LINK_LIBRARIES-in-try_run.patch
+	fedora/0006-Adjust-to-cmake-policy-change.patch
+	fedora/0007-Adjust-to-cmake-policy-change.patch
+	fedora/0008-Fix-CMP0022-warnings.patch
+	fedora/0009-Fix-option-name.patch
+	fedora/0010-Add-min-required-cmake-version-fix-clashes-on-target.patch
+	fedora/0011-Remove-use-of-command-creating-un-useful-output.patch
+	fedora/0012-gpgme-CMakeLists.txt-don-t-install-GpgmeppLibraryDep.patch
+	fedora/0013-Remove-use-of-non-existant-file.patch
+	fedora/0014-AgentManager-avoid-recursion-agentTypeAdded-readAgen.patch
+	fedora/0015-Allow-child-dialogs-to-have-a-separate-akonadi-not-s.patch
+	fedora/0016-fix-windows-build.patch
+	fedora/0017-subscriptiondialog.cpp-make-default-size-a-little-la.patch
+	fedora/0018-find-libical-from-the-Config-files-if-possible.patch
+	fedora/0019-also-copy-over-the-USE_ICAL-flags.patch
+	fedora/0020-kio_pop3-Fix-missing-mimetype-warnings.patch
+	fedora/0021-kimap-loginjob.cpp-support-for-GSSAPI-authentication.patch
+	fedora/0022-ItemSync-use-RID-merge-by-default-allow-optional-swi.patch
+	fedora/0023-addtransportdialog.cpp-make-default-size-a-little-la.patch
+	fedora/0024-Fix-ItemSync-merge-type-fallback.patch
+	fedora/0025-incidenceformatter.cpp-allow-links-in-todo-and-journ.patch
+	fedora/0026-Check-response-content-size-before-accessing-it-in-s.patch
+	fedora/0027-icalformat_p.cpp-Fix-heap-use-after-free-in-readICal.patch
+	fedora/0028-Better-error-message-in-case-of-an-ical-parse-error.patch
+	fedora/0029-Speed-up-the-default-Identity-constructor.patch
+	fedora/0030-Use-KSharedConfig-openConfig-kmail2rc-to-try-and-opt.patch
+	fedora/0031-Bug-346060-fix-deferral-time-of-date-only-recurring-.patch
+	fedora/0032-holidays_ua_uk-updated-Ukrainian-holidays.patch
+	fedora/0033-Akonadi-SpecialCollectionsRequestJob-increase-timeou.patch
+	fedora/0034-holiday_de-by_de-remove-Bu-und-Bettag-as-public-holi.patch
+	fedora/0035-akonadi-collectionstatisticsdelegate.cpp-backport.patch
+	fedora/0043-Backport-avoid-to-transform-as-a-url-when-we-have-a-.patch
+"
 
-PKG_NAMES="libkpim4 libkpim-common libkpim-devel"
+PKG_NAMES="libkpim4 libkpim-devel"
 libkpim4_SUMMARY="${SUMMARY} (runtime)"
-libkpim4_REQUIRES="libkpim-common"
-libkpim4_CONTENTS="--exclude=designer usr/bin/ usr/lib/kde4/"
-libkpim_common_SUMMARY="${SUMMARY} (runtime data)"
-libkpim_common_CONTENTS="--exclude=cmake etc/ usr/share/"
+libkpim4_OBSOLETES="libkpim-common"
+libkpim4_CONTENTS="
+	--exclude=designer
+	usr/bin/
+	usr/lib/kde4/
+	usr/share/akonadi/
+	usr/share/doc/HTML/en/*
+	usr/share/doc/${NAME}
+	usr/share/kde4/apps/akonadi*/
+	usr/share/kde4/apps/kabc/
+	usr/share/kde4/apps/kconf_update/
+	usr/share/kde4/apps/libkholidays/
+	usr/share/kde4/config.kcfg/
+	usr/share/kde4/services/*
+	usr/share/kde4/servicetypes/*
+	usr/share/mime/packages/*
+"
 libkpim_devel_SUMMARY="${SUMMARY} (development)"
 libkpim_devel_REQUIRES="libakonadiprotocolinternals-devel libboost-devel libkdecore-devel libQtCore4-devel libQtDBus4-devel libQtGui4-devel"
-libkpim_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/gpgmepp/ usr/lib/kde4/plugins/designer/
-                        usr/lib/lib* usr/share/kde4/apps/cmake/"
+libkpim_devel_CONTENTS="
+	usr/include/kde4/*
+	usr/lib/cmake/KdepimLibs/
+	usr/lib/kde4/plugins/designer/
+	usr/lib/lib*
+	usr/share/dbus-1/interfaces/*
+	usr/share/kde4/apps/cmake/
+"
+# unused, conflicts with standalone bindings
+PKG_IGNORE="usr/lib/gpgmepp/"
